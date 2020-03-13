@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    
+    <title>Using Git - Justice On The Web</title>
+    
+
+    <!--[if gt IE 8]><!--><link href="/stylesheets/screen.css" media="screen" rel="stylesheet" ><!--<![endif]-->
+    <!--[if lte IE 8]><link href="/stylesheets/screen-old-ie.css" media="screen" rel="stylesheet" ><![endif]-->
+
+    <link rel="canonical" href="http://localhost:4000/guides/using-git/">
+
+    <link href="/stylesheets/print.css" media="print" rel="stylesheet" >
+    <script src="/javascripts/application.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <div class="app-pane">
+      <div class="app-pane__header toc-open-disabled">
+        <a href="#content" class="skip-link">Skip to main content</a>
+
+        <header class="header header--full-width">
+  <div class="header__container">
+    <div class="header__brand">
+        <a href="/">
+        
+        <span class="header__title">
+          Justice On The Web
+          
+        </span>
+        </a>
+    </div>
+
+    
+      <div data-module="navigation">
+        <button type="button" class="header__navigation-toggle js-nav-toggle" aria-controls="navigation" aria-label="Show or hide top level navigation">Menu</button>
+
+        <nav id="navigation" class="header__navigation js-nav" aria-label="Top Level Navigation" aria-hidden="true">
+          <ul>
+            
+              <li>
+                <a href="https://github.com/ministryofjustice/justice-on-the-web">
+                  GitHub
+                </a>
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    
+  </div>
+</header>
+
+      </div>
+
+      <div id="toc-heading" class="toc-show fixedsticky">
+        <a href="#toc" class="toc-show__label js-toc-show" aria-controls="toc">
+          Table of contents <span class="toc-show__icon"></span>
+        </a>
+      </div>
+
+      <div class="app-pane__body" data-module="in-page-navigation">
+        <div class="app-pane__toc">
+          <div class="toc" data-module="table-of-contents">
+            <a href="#" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></a>
+            <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading">
+              
+
+<ul>
+  <li><a href="#using-git">Using Git</a>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#tutorials">Tutorials</a></li>
+      <li><a href="#how-to">How-to</a>
+        <ul>
+          <li><a href="#set-up-to-start-contributing">Set up to start contributing</a></li>
+          <li><a href="#work-locally">Work locally</a></li>
+          <li><a href="#commit-locally-regularly">Commit locally regularly</a></li>
+          <li><a href="#push-your-changes-regularly">Push your changes regularly</a></li>
+          <li><a href="#request-a-review">Request a review</a></li>
+          <li><a href="#review-pull-requests">Review pull requests</a></li>
+        </ul>
+      </li>
+      <li><a href="#further-reading">Further Reading</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+            </nav>
+          </div>
+        </div>
+
+        <div class="app-pane__content toc-open-disabled">
+          <main id="content" class="technical-documentation" data-module="anchored-headings">
+            <h1 id="using-git">Using Git</h1>
+
+<h2 id="overview">Overview</h2>
+
+<p><a href="https://git-scm.com/">git</a> is a <a href="https://en.wikipedia.org/wiki/Distributed_version_control">distributed version-control system</a>. It’s distributed,
+in that there’s no central source of truth. Each copy of a repository can
+contain the entire history, and be considered an authoritative source. But we
+tend to use it in a centralised fashion, treating the version that is
+<a href="https://github.com/ministryofjustice">hosted on GitHub</a> as the shared central
+version, and basing all work against that copy.</p>
+
+<p>It has excellent tools for branching and merging. Branching is possible in
+other version control systems, but merging can be very painful. This made
+people tentative about using that workflow.</p>
+
+<p>In git, that problem goes away.</p>
+
+<h2 id="tutorials">Tutorials</h2>
+
+<ul>
+  <li><a href="https://try.github.io/">https://try.github.io/</a></li>
+  <li><a href="https://www.atlassian.com/git/tutorials">https://www.atlassian.com/git/tutorials</a></li>
+</ul>
+
+<h2 id="how-to">How-to</h2>
+
+<h3 id="set-up-to-start-contributing">Set up to start contributing</h3>
+
+<p>Do not fork – <a href="https://www.git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#_git_cloning">clone a repo</a> from
+<a href="https://github.com/ministryofjustice">https://github.com/ministryofjustice</a>
+to your local machine.</p>
+
+<h3 id="work-locally">Work locally</h3>
+
+<p><a href="https://www.git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_branching">Create a branch</a> to work in for your changes.</p>
+
+<p>Before you create a branch, it’s worth considering the branch names and how you
+think the branch might become visible to other people.</p>
+
+<p>A common prefix can be useful for categorising branches, and working with tools
+for continuous integration. Naming branches such as <code class="language-plaintext highlighter-rouge">feature/foo</code>,
+<code class="language-plaintext highlighter-rouge">feature/bar</code>, and <code class="language-plaintext highlighter-rouge">bug/fix-column-migration</code> can help other people in the team
+understand whether it’s a feature (new behaviour) or a fixing a bug. Having a
+common prefix can also work well with continuous integration tools such as
+<a href="https://travis-ci.org/">Travis</a>, which might be
+<a href="https://docs.travis-ci.com/user/customizing-the-build/#Using-regular-expressions">instructed to only do certain actions on branches</a>
+named <code class="language-plaintext highlighter-rouge">feature/*</code> versus the <code class="language-plaintext highlighter-rouge">master</code> branch.</p>
+
+<p>Other approaches:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">feature/{JIRA-issue}-{description}</code> – this change is for the Jira issue
+LM-6, and also has a human-readable description to give people more context.
+Also, one or more people might be working on this branch (pairing, or
+separately)</li>
+  <li><code class="language-plaintext highlighter-rouge">jabley/thing</code> – this branch contains work that developer known as jabley is
+doing. Other people might not want to rely on this branch, since it might be
+force-pushed (but nicely please!)</li>
+</ul>
+
+<h3 id="commit-locally-regularly">Commit locally regularly</h3>
+
+<p>This can help to get to the point where you have a working version, and then
+want to try adding a new thing. Try to aim for each <a href="https://www.git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">commit</a>
+to be an atomic unit that delivers a non-broken version of the code-base. As
+you make more changes, consider whether it should be separate commit, or an
+amendment to the last one. You can always
+<a href="https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History">interactively rebase your changes</a>
+to edit the commit history to a logical changeset.</p>
+
+<h3 id="push-your-changes-regularly">Push your changes regularly</h3>
+
+<p>This protects you from local hardware failure, and
+<a href="https://www.git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes#_pushing_remotes">ensures you don’t lose your changes</a>.</p>
+
+<h3 id="request-a-review">Request a review</h3>
+
+<p>Once you have got to the point where you consider the change complete, you 
+should <a href="https://help.github.com/articles/creating-a-pull-request/">open a pull request on GitHub</a>,
+asking for the changes to be reviewed by someone else on the team.</p>
+
+<h3 id="review-pull-requests">Review pull requests</h3>
+
+<p>Before commenting on a pull request, ensure you know how the person would
+prefer to get feedback. This might involve asking them first. Feedback options
+include face-to-face, pairing, via email/Slack, or commenting on a pull request.</p>
+
+<p>Ideally, continuous integration should be set up to provide some feedback on a
+pull request (the tests pass, coding style has been followed etc). If not,
+you’ll probably want to pull the code and try it out for yourself.</p>
+
+<h2 id="further-reading">Further Reading</h2>
+
+<ul>
+  <li><a href="https://twitter.com/annashipman">Anna Shipman</a>’s description of <a href="https://www.annashipman.co.uk/jfdi/good-pull-requests.html">how to create good pull requests</a></li>
+  <li><a href="https://twitter.com/alicebartlett">Alice Bartlett</a> wrote
+<a href="http://alicebartlett.co.uk/blog/six-months-at-gds">a very honest account of her experience moving to coding in the open and using GitHub</a>. She also did
+<a href="https://www.youtube.com/watch?v=eWxxfttcMts">a nice talk introducing Git for non-technical folk</a></li>
+  <li><a href="https://github.com/alphagov/styleguides/blob/master/git.md#commit-messages">Why we care about commit messages</a>.
+Commit messages live longer than pull requests</li>
+  <li><a href="https://github.com/alphagov/styleguides/blob/master/pull-requests.md">The GOV.UK pull request process has some GitHub-specific advice</a></li>
+</ul>
+
+
+          </main>
+
+          <footer class="footer">
+  <div class="footer__licence">
+    <a class="footer__licence-logo" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a>
+    <p class="footer__licence-description">All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+  </div>
+
+  <div class="footer__copyright">
+    <a class="footer__copyright-logo" href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
+  </div>
+</footer>
+
+        </div>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>
