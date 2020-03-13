@@ -8,14 +8,9 @@ header_links:
 defaults:
   -
     scope:
-      path: "standards"
+      path: "eng-practices"
     values:
       standard: true
-  -
-    scope:
-      path: "guides"
-    values:
-      guide: true
   -
     scope:
       path: "runbooks"

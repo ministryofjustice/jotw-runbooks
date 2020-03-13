@@ -1,30 +1,9 @@
-# Home
+# Justice On The Web
 
-<!-- ## Principles
-
-{% assign principle_groups = site.pages
-  | where: "runbooks", true %}
-
-{% for principle in principle_groups %}
-- [{{ principle.title }}]({{ principle.url | relative_url }})
-{% endfor %} -->
+## Runbooks
 
 ## Eng practices
 
-{% assign standards = site.pages
-  | where: "standard", true
-  | group_by: "category" %}
+"The primary purpose of code review is to make sure that the overall code health of Google’s code base is improving over time. All of the tools and processes of code review are designed to this end."
 
-{% for standard_group in standards %}
-{% if standard_group.name != "" %}
-### {{ standard_group.name }}
-{% else %}
-### General standards
-{% endif %}
-
-{% for standard in standard_group.items %}
-- [{{ standard.title }}]({{ standard.url | relative_url }})
-{% endfor %}
-{% endfor %}
-
-## Runbooks
+(https://google.github.io/eng-practices/review/reviewer/standard.html)[Standards]
