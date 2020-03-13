@@ -1,2 +1,2 @@
-run:
+server:
 	bundle exec middleman server
