@@ -1,4 +1,4 @@
-# JOTW engineering practices and runbook documentation
+# Justice On The Web techincal documentation
 
 A statically generated Jekyll site, serving the JOTW team's technical documentation.
 
