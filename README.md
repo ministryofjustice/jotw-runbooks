@@ -1,6 +1,6 @@
-# Justice On The Web techincal documentation
+# Justice On The Web
 
-A statically generated Jekyll site, serving the JOTW team's technical documentation.
+Justice On The Web team [technical documentation repository] (https://ministryofjustice.github.io/justice-on-the-web)
 
 This repo is inspired by, and borrows from, [GDS's technical guidance][gds-way]
 site and that of other Ministry of Justice Digital team Jekyll sites.
