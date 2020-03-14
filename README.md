@@ -1,7 +1,5 @@
 # Justice On The Web
 
-Justice On The Web team [technical documentation repository.](https://ministryofjustice.github.io/justice-on-the-web)
-
 This repo is inspired by, and borrows from, [GDS's technical guidance][gds-way]
 site and that of other Ministry of Justice Digital team Jekyll sites.
 
