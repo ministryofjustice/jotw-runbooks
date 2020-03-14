@@ -1,5 +1,7 @@
 # Justice On The Web
 
+A single source of truth for the JOTW team technical guidance, standards and engineering practices.
+
 ## Runbooks
 
 ## Eng practices
