@@ -75,11 +75,29 @@
 <ul>
   <li><a href="#justice-on-the-web">Justice On The Web</a>
     <ul>
+      <li><a href="#standards">Standards</a>
+        <ul>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#code-review">Code Review</a></li>
+          <li><a href="#style-guide">Style guide</a></li>
+        </ul>
+      </li>
       <li><a href="#runbooks">Runbooks</a></li>
-      <li><a href="#engineering-practices">Engineering practices</a></li>
       <li><a href="#guides">Guides</a>
         <ul>
-          <li><a href="#team-tools">Team tools</a></li>
+          <li><a href="#websites">Websites</a>
+            <ul>
+              <li><a href="#moj-specific">MoJ specific</a></li>
+              <li><a href="#external">External</a></li>
+            </ul>
+          </li>
+          <li><a href="#team-tools">Team tools</a>
+            <ul>
+              <li><a href="#required-on-your-machine">Required on your machine</a></li>
+              <li><a href="#helpful-to-have">Helpful to have</a></li>
+              <li><a href="#learning">Learning</a></li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -96,22 +114,96 @@
             <h1 id="justice-on-the-web">Justice On The Web</h1>
 <p>This site aims to document the team’s technical guidance and engineering practices.</p>
 
+<h2 id="standards">Standards</h2>
+<p>Borrowing from Google’s engineering practices, our aim within JOTW, with respect to our standards, is to always “make sure that the overall code health …is improving over time … [and that] all of the tools and processes of code review are designed to this end”.</p>
+
+<p>See Google’s full <a href="https://google.github.io/eng-practices/review/reviewer/standard.html">documentation</a> on coding standards.</p>
+
+<h3 id="languages">Languages</h3>
+<p>On the PHP front, this is still open to discussion but we are aiming to follow the <a href="https://www.php-fig.org/psr/">PSR standards</a>. Preferably, PSR12 for all PHP code, either in a theme, plugin or microservice.</p>
+<ul>
+  <li><a href="https://www.php-fig.org/psr/psr-12/">PHP12</a></li>
+</ul>
+
+<p>Start formatting and linting your code to this standard one option is to use <a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a> however, there may also be plugins for your specific code editor.</p>
+
+<h3 id="code-review">Code Review</h3>
+<p>On this aspect, it seems Google has done an excellent job covering the dos and don’ts. For now we can reference their documentation, however, as a team we can discuss if there are areas in which we diverge from their documentation or are not applicable.</p>
+
+<p><a href="https://google.github.io/eng-practices/review/reviewer/standard.html">The Standard of Code Review</a></p>
+
+<p>TL;DR - see their section on “Principles”.</p>
+
+<h3 id="style-guide">Style guide</h3>
+<p>This covers a lot of ground. For now I’m again, referencing Google’s documentation where applicable but we will have to revisit this area.</p>
+
+<ul>
+  <li><a href="https://google.github.io/styleguide/htmlcssguide.html">HTML/CSS Guide</a></li>
+  <li><a href="https://google.github.io/styleguide/jsguide.html">Javascript?</a></li>
+</ul>
+
+<p>There is also the <a href="https://standardjs.com/">JS standard</a> which we may want to follow. We’ll have to have further discussions as a team on the standards around JS.</p>
+
+<ul>
+  <li><a href="https://gds-way.cloudapps.digital/standards/source-code.html#working-with-git">Working with Git</a></li>
+</ul>
+
 <h2 id="runbooks">Runbooks</h2>
-
-<h2 id="engineering-practices">Engineering practices</h2>
-<blockquote>
-  <p>The primary purpose of code review is to make sure that the overall code health of Google’s code base is improving over time. All of the tools and processes of code review are designed to this end.</p>
-</blockquote>
-
-<p><a href="https://google.github.io/eng-practices/review/reviewer/standard.html">Google on coding standards</a></p>
+<p>Runbooks are currently located in <a href="https://dsdmoj.atlassian.net/wiki/spaces/JOWJ/pages/1482326465/WordPress+Sites+Runbook">Confluence</a></p>
 
 <h2 id="guides">Guides</h2>
 
-<h3 id="team-tools">Team tools</h3>
+<h3 id="websites">Websites</h3>
+
+<h4 id="moj-specific">MoJ specific</h4>
 <ul>
-  <li>Git</li>
-  <li>PHPStorm</li>
-  <li>VC Code</li>
+  <li><a href="https://ministryofjustice.github.io/security-guidance/#moj-security--guidance">Security guidance</a></li>
+  <li><a href="https://github.com/ministryofjustice/technical-guidance">Technical guidance</a></li>
+  <li><a href="https://user-guide.cloud-platform.service.justice.gov.uk/#cloud-platform-user-guide">CloudPlatforms user guide</a></li>
+</ul>
+
+<h4 id="external">External</h4>
+<ul>
+  <li><a href="https://gds-way.cloudapps.digital/">GDS Way</a></li>
+</ul>
+
+<h3 id="team-tools">Team tools</h3>
+<p>Devs in the team use a wide selection of tools. Some are critical to the development of our apps and are required. Below are a listing of these critical and the “nice to haves’”.</p>
+
+<h4 id="required-on-your-machine">Required on your machine</h4>
+<ul>
+  <li><a href="https://git-scm.com/">Git</a></li>
+  <li><a href="https://www.docker.com/">Docker</a></li>
+  <li><a href="https://getcomposer.org/">Composer</a></li>
+  <li><a href="https://aws.amazon.com/cli/">AWS CLI</a></li>
+  <li><a href="https://github.com/ministryofjustice/wasm">WASM</a></li>
+</ul>
+
+<h4 id="helpful-to-have">Helpful to have</h4>
+<ul>
+  <li><a href="https://github.com/tmux/tmux/wiki">TMUX</a></li>
+  <li><a href="https://www.iterm2.com/">Term2</a></li>
+</ul>
+
+<p>Editors</p>
+<ul>
+  <li><a href="https://www.jetbrains.com/phpstorm/">PHPStorm</a> (30 Day free trial)</li>
+  <li><a href="https://code.visualstudio.com/">VC Code</a></li>
+</ul>
+
+<p>Testing</p>
+<ul>
+  <li><a href="https://www.browserstack.com/">BrowserStack</a></li>
+  <li><a href="https://phpunit.de/">PHPUNIT</a></li>
+  <li><a href="https://docs.behat.org/en/latest/">Behat</a></li>
+</ul>
+
+<h4 id="learning">Learning</h4>
+<p>Continuous learning is really important us. To aid in this, we have resources available. Ask around in the team for access, however, some resources may require contacting the service desk for access. Here are some recommended learning resources.</p>
+
+<ul>
+  <li><a href="https://www.pluralsight.com/">Pluralsight</a></li>
+  <li><a href="https://www.oreilly.com/">O’Reilly</a></li>
 </ul>
 
           </main>
