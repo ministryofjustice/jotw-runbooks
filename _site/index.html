@@ -77,13 +77,12 @@
     <ul>
       <li><a href="#standards">Standards</a>
         <ul>
-          <li><a href="#languages">Languages</a></li>
           <li><a href="#code-review">Code Review</a></li>
           <li><a href="#style-guide">Style guide</a></li>
         </ul>
       </li>
       <li><a href="#runbooks">Runbooks</a></li>
-      <li><a href="#guides">Guides</a></li>
+      <li><a href="#how-to-guides">How to guides</a></li>
       <li><a href="#tools">Tools</a>
         <ul>
           <li><a href="#required">Required</a></li>
@@ -110,14 +109,6 @@
 
 <p>See Google’s full <a href="https://google.github.io/eng-practices/review/reviewer/standard.html">documentation</a> on coding standards.</p>
 
-<h3 id="languages">Languages</h3>
-<p>On the PHP front, this is still open to discussion but we are aiming to follow the <a href="https://www.php-fig.org/psr/">PSR standards</a>. Preferably, PSR12 for all PHP code, either in a theme, plugin or microservice.</p>
-<ul>
-  <li><a href="https://www.php-fig.org/psr/psr-12/">PHP12</a></li>
-</ul>
-
-<p>Start formatting and linting your code to this standard one option is to use <a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a> however, there may also be plugins for your specific code editor.</p>
-
 <h3 id="code-review">Code Review</h3>
 <p>On this aspect, it seems Google has done an excellent job covering the dos and don’ts. For now we can reference their documentation, however, as a team we can discuss if there are areas in which we diverge from their documentation or are not applicable.</p>
 
@@ -126,23 +117,23 @@
 <p>TL;DR - see their section on “Principles”.</p>
 
 <h3 id="style-guide">Style guide</h3>
-<p>This covers a lot of ground. For now I’m again, referencing Google’s documentation where applicable but we will have to revisit this area.</p>
+<p>This covers a lot of ground. For now I’m again, going to be referencing Google’s documentation as a default where there are gaps but we can continue to update this section where we deviate from Google.</p>
 
 <ul>
-  <li><a href="https://google.github.io/styleguide/htmlcssguide.html">HTML/CSS Guide</a></li>
-  <li><a href="https://google.github.io/styleguide/jsguide.html">Javascript?</a></li>
-</ul>
-
-<p>There is also the <a href="https://standardjs.com/">JS standard</a> which we may want to follow. We’ll have to have further discussions as a team on the standards around JS.</p>
-
-<ul>
+  <li><a href="/standards/html-css">HTML/CSS</a></li>
+  <li><a href="/standards/javascript">Javascript</a></li>
+  <li><a href="/standards/php">PHP</a></li>
   <li><a href="https://gds-way.cloudapps.digital/standards/source-code.html#working-with-git">Working with Git</a></li>
 </ul>
 
 <h2 id="runbooks">Runbooks</h2>
 <p>Runbooks are currently located in <a href="https://dsdmoj.atlassian.net/wiki/spaces/JOWJ/pages/1482326465/WordPress+Sites+Runbook">Confluence</a></p>
 
-<h2 id="guides">Guides</h2>
+<h2 id="how-to-guides">How to guides</h2>
+<ul>
+  <li><a href="/guides/git">How to install Git on your Mac</a></li>
+  <li><a href="/guides/wasm">How to install WASM on your Mac</a></li>
+</ul>
 
 <h2 id="tools">Tools</h2>
 <p>Devs in the team use a wide selection of tools. Some are critical to the development of our apps and are required. Below are a listing of these critical and the “nice to haves’”.</p>

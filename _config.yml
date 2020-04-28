@@ -14,3 +14,13 @@ defaults:
       path: "runbooks"
     values:
       runbooks: true
+  -
+    scope:
+      path: "tools"
+    values:
+      runbooks: true
+  -
+    scope:
+      path: "guides"
+    values:
+      runbooks: true
