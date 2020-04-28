@@ -34,16 +34,6 @@ Runbooks are currently located in [Confluence](https://dsdmoj.atlassian.net/wiki
 
 ## Guides
 
-### Websites
-
-#### MoJ specific
-* [Security guidance](https://ministryofjustice.github.io/security-guidance/#moj-security--guidance)
-* [Technical guidance](https://github.com/ministryofjustice/technical-guidance)
-* [CloudPlatforms user guide](https://user-guide.cloud-platform.service.justice.gov.uk/#cloud-platform-user-guide)
-
-#### External
-* [GDS Way](https://gds-way.cloudapps.digital/)
-
 ## Tools
 Devs in the team use a wide selection of tools. Some are critical to the development of our apps and are required. Below are a listing of these critical and the "nice to haves'”.
 
