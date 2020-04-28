@@ -1,18 +1,26 @@
 title: Justice On The Web
-
 permalink: pretty
-
 header_links:
   GitHub: https://github.com/ministryofjustice/justice-on-the-web
-
 defaults:
   -
     scope:
       path: "standards"
+      type: "pages"
     values:
       standard: true
   -
     scope:
       path: "runbooks"
+    values:
+      runbooks: true
+  -
+    scope:
+      path: "tools"
+    values:
+      runbooks: true
+  -
+    scope:
+      path: "guides"
     values:
       runbooks: true
