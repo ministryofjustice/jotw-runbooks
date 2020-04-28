@@ -1,6 +1,6 @@
 ---
-category: How to
-expires: 2019-03-31
+category: Guides
+expires: 2021-01-31
 ---
 
 # How to install Git on your Mac

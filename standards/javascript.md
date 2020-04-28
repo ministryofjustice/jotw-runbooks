@@ -1,6 +1,6 @@
 ---
-category: Style guide
-expires: 2019-03-31
+category: Standards
+expires: 2021-01-31
 ---
 
 # Javascript
