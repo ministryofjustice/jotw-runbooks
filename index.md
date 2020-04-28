@@ -44,17 +44,17 @@ Runbooks are currently located in [Confluence](https://dsdmoj.atlassian.net/wiki
 #### External
 * [GDS Way](https://gds-way.cloudapps.digital/)
 
-### Team tools
+## Tools
 Devs in the team use a wide selection of tools. Some are critical to the development of our apps and are required. Below are a listing of these critical and the "nice to haves'”.
 
-#### Required on your machine
+### Required
 * [Git](https://git-scm.com/)
 * [Docker](https://www.docker.com/)
 * [Composer](https://getcomposer.org/)
 * [AWS CLI](https://aws.amazon.com/cli/)
 * [WASM](https://github.com/ministryofjustice/wasm)
 
-#### Helpful to have
+### Nice to haves
 * [TMUX](https://github.com/tmux/tmux/wiki)
 * [Term2](https://www.iterm2.com/)
 
@@ -67,7 +67,7 @@ Testing
 * [PHPUNIT](https://phpunit.de/)
 * [Behat](https://docs.behat.org/en/latest/)
 
-#### Learning
+## Learning
 Continuous learning is really important us. To aid in this, we have resources available. Ask around in the team for access, however, some resources may require contacting the service desk for access. Here are some recommended learning resources.
 
 * [Pluralsight](https://www.pluralsight.com/)

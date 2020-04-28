@@ -1,14 +1,12 @@
 title: Justice On The Web
-
 permalink: pretty
-
 header_links:
   GitHub: https://github.com/ministryofjustice/justice-on-the-web
-
 defaults:
   -
     scope:
       path: "standards"
+      type: "pages"
     values:
       standard: true
   -
