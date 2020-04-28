@@ -73,7 +73,25 @@
               
 
 <ul>
-  <li><a href="#html-and-css">HTML and CSS</a></li>
+  <li><a href="#html-and-css">HTML and CSS</a>
+    <ul>
+      <li><a href="#html5">HTML5</a></li>
+      <li><a href="#css">CSS</a>
+        <ul>
+          <li><a href="#flexbox">Flexbox</a></li>
+          <li><a href="#css-grid">CSS GRID</a></li>
+          <li><a href="#sass">SASS</a></li>
+          <li><a href="#bem">BEM</a></li>
+        </ul>
+      </li>
+      <li><a href="#image-use">Image use</a></li>
+      <li><a href="#webpack">Webpack</a>
+        <ul>
+          <li><a href="#laravel-mix">Laravel Mix</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
 </ul>
 
 
@@ -85,7 +103,72 @@
           <main id="content" class="technical-documentation" data-module="anchored-headings">
             <h1 id="html-and-css">HTML and CSS</h1>
 
+<h2 id="html5">HTML5</h2>
+
+<p>Our team uses HTML5 language features as default, when possible, building the websites html markup.</p>
+
+<p>Example using semantic elements:</p>
+<p align="left"><img src="https://www.w3schools.com/html/img_sem_elements.gif " /></p>
+
+<p>Useful resources</p>
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">Mozilla Offical HTML5 Docs</a></li>
+</ul>
+
+<h2 id="css">CSS</h2>
+
+<p>When possible, use flexbox and CSS grid to achieve frontend page layouts.</p>
+
+<h3 id="flexbox">Flexbox</h3>
+
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Basic concepts of Flexbox</a></li>
+</ul>
+
+<h3 id="css-grid">CSS GRID</h3>
+
+<p>Useful resources</p>
+<ul>
+  <li><a href="https://cssgrid.io/">CSS GRID with Wes Boss</a> (free)</li>
+  <li><a href="https://gridbyexample.com/">Grid by Example</a></li>
+</ul>
+
 <p>If not covered yet in this documentation, as a default refer to <a href="https://google.github.io/styleguide/jsguide.html">Google’s documentation</a>.</p>
+
+<h3 id="sass">SASS</h3>
+
+<p>Preference in the team to use SASS, unless there is a legitimate reason to use something else. SASS however, is mature, well documented, feature rich and used by Gov UK.</p>
+
+<ul>
+  <li><a href="https://sass-lang.com/">SASS offical site</a></li>
+</ul>
+
+<h3 id="bem">BEM</h3>
+
+<p>CSS methodology is the core approach we current strive for in the team.</p>
+
+<p>Further information available at <a href="http://getbem.com/introduction/">BEM intro</a></p>
+
+<h2 id="image-use">Image use</h2>
+
+<ul>
+  <li>Use SVGs for logos</li>
+  <li>Keep images out of Git if possible</li>
+</ul>
+
+<h2 id="webpack">Webpack</h2>
+
+<p>We current use webpack across all our sites and plugins where possible. In an order to keep things consistent, it is encouraged to use Webpack unless there is a good reason to use another compiler.</p>
+<ul>
+  <li><a href="https://webpack.js.org/">Webpack site</a></li>
+</ul>
+
+<h3 id="laravel-mix">Laravel Mix</h3>
+
+<p>Ontop of WebPack we use Laravel Mix, which basically simplifies Webpack usage. Laravel Mix can be added via NPM.</p>
+<ul>
+  <li><a href="https://laravel-mix.com/docs/5.0/installation">Laravel Mix</a></li>
+</ul>
 
           </main>
 

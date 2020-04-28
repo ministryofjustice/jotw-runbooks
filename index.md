@@ -16,17 +16,18 @@ TL;DR - see their section on "Principles".
 ### Style guide
 This covers a lot of ground. For now I'm again, going to be referencing Google's documentation as a default where there are gaps but we can continue to update this section where we deviate from Google.
 
-* [HTML/CSS](/standards/html-css)
+* [HTML/CSS/Webpack](/standards/html-css)
 * [Javascript](/standards/javascript)
 * [PHP](/standards/php)
-* [Working with Git](https://gds-way.cloudapps.digital/standards/source-code.html#working-with-git)
+
+We currently do not have a team style guide for using Git, however, GDS provide a useful default for us to follow:
+* [Working with Git](https://gds-way.cloudapps.digital/standards/source-code.html#working-with-git) (External site)
 
 ## Runbooks
 Runbooks are currently located in [Confluence](https://dsdmoj.atlassian.net/wiki/spaces/JOWJ/pages/1482326465/WordPress+Sites+Runbook)
 
 ## How to guides
 * [How to install Git on your Mac](/guides/git)
-* [How to install WASM on your Mac](/guides/wasm)
 
 ## Tools
 Devs in the team use a wide selection of tools. Some are critical to the development of our apps and are required. Below are a listing of these critical and the "nice to haves'”.
