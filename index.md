@@ -16,9 +16,15 @@ TL;DR - see their section on "Principles".
 ### Style guide
 This covers a lot of ground. For now I'm again, going to be referencing Google's documentation as a default where there are gaps but we can continue to update this section where we deviate from Google.
 
-* [HTML/CSS/Webpack](/standards/html-css)
-* [Javascript](/standards/javascript)
-* [PHP](/standards/php)
+{% assign standards = site.pages
+  | where: "standard", true
+  | group_by: "category" %}
+
+{% for standard_group in standards %}
+{% for standard in standard_group.items %}
+* [{{ standard.title }}]({{ standard.url | relative_url }})
+{% endfor %}
+{% endfor %}
 
 We currently do not have a team style guide for using Git, however, GDS provide a useful default for us to follow:
 * [Working with Git](https://gds-way.cloudapps.digital/standards/source-code.html#working-with-git) (External site)
@@ -27,7 +33,15 @@ We currently do not have a team style guide for using Git, however, GDS provide 
 Runbooks are currently located in [Confluence](https://dsdmoj.atlassian.net/wiki/spaces/JOWJ/pages/1482326465/WordPress+Sites+Runbook)
 
 ## How to guides
-* [How to install Git on your Mac](/guides/git)
+{% assign guides = site.pages
+  | where: "guide", true
+  | group_by: "category" %}
+
+{% for guide_group in guides %}
+{% for guide in guide_group.items %}
+* [{{ guide.title }}]({{ guide.url | relative_url }})
+{% endfor %}
+{% endfor %}
 
 ## Tools
 Devs in the team use a wide selection of tools. Some are critical to the development of our apps and are required. Below are a listing of these critical and the "nice to haves'”.
