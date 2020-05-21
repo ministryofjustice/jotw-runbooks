@@ -30,7 +30,17 @@ We currently do not have a team style guide for using Git, however, GDS provide 
 * [Working with Git](https://gds-way.cloudapps.digital/standards/source-code.html#working-with-git) (External site)
 
 ## Runbooks
-Runbooks are currently located in [Confluence](https://dsdmoj.atlassian.net/wiki/spaces/JOWJ/pages/1482326465/WordPress+Sites+Runbook)
+{% assign runbooks = site.pages
+  | where: "runbook", true
+  | group_by: "category" %}
+
+{% for runbook_group in runbooks %}
+{% for runbook in runbook_group.items %}
+* [{{ runbook.title }}]({{ runbook.url | relative_url }})
+{% endfor %}
+{% endfor %}
+
+Most runbooks are currently located in [Confluence](https://dsdmoj.atlassian.net/wiki/spaces/JOWJ/pages/1482326465/WordPress+Sites+Runbook) . TODO: Migrate runbooks over.
 
 ## How to guides
 {% assign guides = site.pages
