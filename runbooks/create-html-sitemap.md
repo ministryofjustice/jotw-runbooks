@@ -17,7 +17,7 @@ expires: 2021-01-31
 3. run `php <name of php file>`.
 
 This code is also available to download at
-* [create-html-sitemap.php](https://github.com/ministryofjustice/justice-on-the-web/code_snippets/create-html-sitemap.php)
+* [create-html-sitemap.php](https://github.com/ministryofjustice/justice-on-the-web/blob/master/code_snippets/create-html-sitemap.php)
 
 ```
 <?php
