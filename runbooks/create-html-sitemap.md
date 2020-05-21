@@ -3,7 +3,7 @@ category: Runbooks
 expires: 2021-01-31
 ---
 
-# Create a HTML sitemap from an .xml file
+# Create an HTML sitemap from an .xml file
 
 ## Required
 
