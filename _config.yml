@@ -11,6 +11,12 @@ defaults:
       standard: true
   -
     scope:
+      path: "runbooks"
+      type: "pages"
+    values:
+      runbook: true
+  -
+    scope:
       path: "guides"
       type: "pages"
     values:
