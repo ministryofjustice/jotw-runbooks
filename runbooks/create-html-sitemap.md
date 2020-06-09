@@ -10,7 +10,7 @@ expires: 2021-01-31
 * You need to have the XML file
 * You need to be running PHP on your computer
 
-### Instructions
+## Instructions
 
 1. Copy the below code snippet and add it to a new PHP file.
 2. Populate the fields in the code with your own configuration details.
