@@ -38,7 +38,7 @@ Every website, component, or app that we build with a web interface, should be t
 While this list meets the minimum requirements, individual sites may have a specific set of requirements based on user testing and research data, that should also be taken into consideration.
 
 #### Assistive technology testing (AT)
-We want everyone to be able to access the content within our websites. This means taking into account users who require assistive technologies and understanding how they access our web content. This can only be achieved by testing our websites against AT. GDS offer guidance around what ATs we should be using,
+We want everyone to be able to access the content within our websites. This means taking into account users who require assistive technologies and understand how they access our web content. This can only be achieved by testing our websites against AT. GDS offer guidance around what ATs we should be using,
 
 * [Testing with assistive technologies](https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies) (External site)
 
