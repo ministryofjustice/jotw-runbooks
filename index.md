@@ -30,13 +30,21 @@ We currently do not have a team style guide for using Git, however, GDS provide 
 * [Working with Git](https://gds-way.cloudapps.digital/standards/source-code.html#working-with-git) (External site)
 
 ### Testing our applications
-
 Every website, component, or app that we build with a web interface, should be tested against a suite of different browsers and devices. This is to ensure we are meeting a minimum expected standard across government applications and provide a reasonable level of accessibility for all. We currently follow GDS specifications on what browsers to test on,
 
 * [Designing for different browsers and devices](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices) (External site)
 * [Spreadsheet version of GDS list](https://docs.google.com/spreadsheets/d/1zGvXsgNIoMhynFtUV-WS0lqq5QNGY9mIWBzJ3dbIPfI/edit#gid=0) (Google Doc - check it is up-to-date)
 
 While this list meets the minimum requirements, individual sites may have a specific set of requirements based on user testing and research data, that should also be taken into consideration.
+
+#### Assistive technology testing (AT)
+We want everyone to be able to access the content within our websites. This means taking into account users who require assistive technologies and understanding how they access our web content. This can only be achieved by testing our websites against AT. GDS offer guidance around what ATs we should be using,
+
+* [Testing with assistive technologies](https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies) (External site)
+
+As a team, we are currently working out the best ways to incorporate the above GDS guidance into our testing process.
+
+Interesting further reading on the viewpoint of AT users, can be found at [Responses to the screen reader strategy review](https://heydonworks.com/article/responses-to-the-screen-reader-strategy-survey/) (External site)
 
 ## Runbooks
 {% assign runbooks = site.pages
