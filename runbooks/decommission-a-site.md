@@ -14,7 +14,7 @@ expires: 2022-01-31
 ## Steps
 
 1. Double-check and confirm site is to be decommissioned.
-2. Implement redirects if necessary using team NGINX URL redirect.
+2. Implement redirects if necessary using team NGINX URL redirect. For instructions on how to do this, see our repo [ url-redirect-service-alb](https://github.com/ministryofjustice/url-redirect-service-alb).
 3. Archive the GitHub repo. This can be done using the [GitHub archive button](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/archiving-repositories).
 4. In AWS, go to s3 bucket `s3://decommissioned-site-archival-store`, and create a new folder (named after the website/app being decommissioned) to put the decommissioned site content in.
 5. Create a text file in the new folder with some meta data about the decommissioned site. Here are some example meta fields you might want to include:
