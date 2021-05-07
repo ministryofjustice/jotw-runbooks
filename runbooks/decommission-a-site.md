@@ -26,10 +26,10 @@ Code repo:  https://github.com/ministryofjustice/wp-taxcentreofexcellence
 6. Make a copy of the site's database. This can be done using WASM. Run, `wasm db:export <site name>:prod wordpress.sql` and upload to the newly created .sql file to the new s3 folder mentioned above.
 7. Next, move site related assets (images,docs,media) into the new s3 folder. You can download the production asset folder from s3 and re-upload it to the new archive folder but it's easier to directly copy from one s3 folder to another. Example, run `aws s3 cp s3://<production site s3 bucket name>/ s3://decommissioned-site-archival-store/<new folder name>/ --recursive`.
 8. Delete all s3 bucket environments (dev, staging, prod). If you’re unsure what buckets they are, refer to the CloudFormation template, under `Resources`.
-9. Delete the site's CloudFormation template (prod, staging, dev).
-10. Delete the site's CodePipline.
-11. Check WASM to see site has disappeared, `wasm aws:status`. May take a few mintues.
-12. Update team logs so they reflect the site has been removed - [Site checklist (Google Docs)](https://docs.google.com/spreadsheets/d/1-bppj_FYZL4oCcuA8jNuOkW2L8j6V39Hnx_9b1utRbY/edit?usp=sharing)
-
-Update the DM or PM and/or ticket to confirm decommission has been completed. Additional information also available at
+9. Delete the site's CloudFormation template - London region, (prod, staging & dev environments).
+10. Delete the site's deploy stack CloudFormation template - Ireland region.
+11. Delete the site's CodePipline.
+12. Check WASM to see site has disappeared, `wasm aws:status`. May take a few mintues.
+13. Update team logs so they reflect the site has been removed - [Site checklist (Google Docs)](https://docs.google.com/spreadsheets/d/1-bppj_FYZL4oCcuA8jNuOkW2L8j6V39Hnx_9b1utRbY/edit?usp=sharing)
+14. Update the DM or PM and/or ticket to confirm decommission has been completed. Additional information also available at
 [Decommission a website (Confluence)](https://dsdmoj.atlassian.net/wiki/spaces/JOWJ/pages/1562706189/Decommission+a+WP+website)
