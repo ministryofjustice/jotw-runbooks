@@ -13,7 +13,7 @@ expires: 2023-01-31
 
 ## Phases
 
-This assumes all contnet is ready on the production environment.
+This assumes all content is ready on the production environment.
 
 ### Phase I - Steps leading up to launch
 1. Schedule a time with the domains team to repoint the domain (assuming they control the domain), to go live date of the launch. This involves providing three things to the domains team, 
