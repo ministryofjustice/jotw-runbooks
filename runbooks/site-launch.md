@@ -41,4 +41,4 @@ domain:  ccrc.gov.uk
 
 ## Troubleshooting
 
-After launching the site, some changes may not seem to be taking effect. Domain changes can take some time to propagate so it maybe be that not enough time has passed. Further, there may be caching issues happened. Try clearing the cache on the problem page. 
+After launching the site, some changes may not seem to be taking effect. Domain changes can take some time to propagate so it maybe be that not enough time has passed. Further, there may be caching issues. Try clearing the cache on the problem page first using your browser. You could also try caching the server (NGINX) cache. To do this add `/purge-cache/` to the end of the domain address. For example, `https://ima-citizensrights.org.uk/purge-cache/`. This only has to be run once to take effect across the entire domain. 
