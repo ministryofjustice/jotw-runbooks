@@ -14,7 +14,7 @@ expires: 2023-01-31
 
 ## Phases
 
-This assumes this is a code deployment for a theme (Hale) or plugin that the team supports/manages. If deploying an update to a  thrid party theme/plugin skip to Phase III
+This assumes this is a code deployment for a theme (Hale) or plugin that the team supports/manages. If deploying an update to a third party theme/plugin skip to Phase III
 
 ### Phase I - Create a new release of theme/plugin on github
 1. Create a new branch locally of the theme/plugin repo and commit the code changes to this branch. Make sure to update/bump the version number in plugin/theme files.
@@ -28,7 +28,7 @@ This assumes this is a code deployment for a theme (Hale) or plugin that the tea
 5. In the draft release form enter the following:
 - Tag version - this should be the latest version number of the theme/plugin (the same as updated in the files)
 - Release Title - a short title of what has been changed e.g name of new feature or Bug Fix. 
-- Release describe - create a list of all the changes/ new features /bug fixes that will be released
+- Release description - create a list of all the changes/ new features /bug fixes that will be released
 
 6. Publish the release
 
@@ -45,11 +45,11 @@ This assumes this is a code deployment for a theme (Hale) or plugin that the tea
 5. Check the latest release of the theme/plugin is in the [Composer repo](https://composer.wp.dsd.io/). You will need to be on the VPN to see this.
 
 
-### Phase III - Update Multisite to bring in latest theme/plugin
+### Phase III - Update multisite to bring in latest theme/plugin
 
 1. Make sure you are on the VPN
 
-1. Use the terminal tool to go to the root folder of the multisite. 
+1. Use the terminal tool and go to the root folder of the multisite. 
 
 2. Switch to master branch (if not already on) and git pull any latest changes down.
 
@@ -61,7 +61,7 @@ This assumes this is a code deployment for a theme (Hale) or plugin that the tea
 
 6. Run `git status`. The `composer.lock` should have been modified. 
 
-7. Spin up the Multisite and test locally the latest changes and to make sure there are no issues from the update.
+7. Spin up the multisite and test locally the latest changes and to make sure there are no issues from the update.
 
 8. Commit the changes to `composer.lock` to the update branch and push the branch to github
 
@@ -78,7 +78,7 @@ This assumes this is a code deployment for a theme (Hale) or plugin that the tea
 
 2. Go to CodePipeline section in AWS console.
 
-3. Find the multisite pipeline eg. `jotwpublic` (Make sure your in the right region). Click its name to show the full pipeline.
+3. Find the multisite pipeline eg. `jotwpublic`. Click its name to show the full pipeline.
 
 4. This pipeline has the following stages:
 - Source - The git repos it uses to build the multisite
@@ -89,7 +89,7 @@ This assumes this is a code deployment for a theme (Hale) or plugin that the tea
 
 5. Since a change has been pushed to the master branch of the multisite github repo the build stage should be running
 
-6. Once the build has finished the build stage will be its status will updated to `Succeeded` and then it will deploy the build to the dev environment 
+6. Once the build has finished the build stage its status will be updated to `Succeeded` and then it will deploy the build to the dev environment 
 
 7. Once the build has been deployed the DeployDev stage status will also be updated to `Succeeded`
 
