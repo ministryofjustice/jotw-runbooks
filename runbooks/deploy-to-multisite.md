@@ -49,13 +49,13 @@ This assumes this is a code deployment for a theme (Hale) or plugin that the tea
 
 1. Make sure you are on the VPN
 
-1. Use the terminal tool and go to the root folder of the multisite. 
+1. Use the terminal tool and go to the root folder of the multisite on your local machine. 
 
 2. Switch to master branch (if not already on) and git pull any latest changes down.
 
 3. Create and switch to new a branch from master to push the latest theme/plugin updates to.
 
-4. In terminal (at the root folder of the multisite). run `composer update`
+4. In terminal (at the root folder of the multisite). run `composer update`. If it asks for a Composer password at this stage there is an issue with your VPN connection.
 
 5. This will go through every package listed in the `composer.json` file and update where needed. Watch as it is doing this as other themes/plugins or even Wordpress may be updated.
 
@@ -76,7 +76,7 @@ This assumes this is a code deployment for a theme (Hale) or plugin that the tea
 
 1. Login to the [AWS Console](https://aws.amazon.com/console/) 
 
-2. Go to CodePipeline section in AWS console.
+2. Go to CodePipeline section in AWS console. Check you're in the right AWS region (Ireland). If not it can be switched in the to right corner drop down.
 
 3. Find the multisite pipeline eg. `jotwpublic`. Click its name to show the full pipeline.
 
