@@ -47,17 +47,10 @@ As a team, we are currently working out the best ways to incorporate the above G
 Interesting further reading on the viewpoint of AT users, can be found at [Responses to the screen reader strategy review](https://heydonworks.com/article/responses-to-the-screen-reader-strategy-survey/) (External site)
 
 ## Runbooks
-{% assign runbooks = site.pages
-  | where: "runbook", true
-  | group_by: "category" %}
 
-{% for runbook_group in runbooks %}
-{% for runbook in runbook_group.items %}
-* [{{ runbook.title }}]({{ runbook.url | relative_url }})
-{% endfor %}
-{% endfor %}
+Runbooks have now moved to [Justice On The Web Online Content Flight Rules](https://github.com/ministryofjustice/jotw-online-content-flight-rules) along with details proceedures for empergency situations.
 
-Most runbooks are currently located in [Confluence](https://dsdmoj.atlassian.net/wiki/spaces/JOWJ/pages/1482326465/WordPress+Sites+Runbook) . TODO: Migrate runbooks over.
+Many runbooks are still currently located in [Confluence](https://dsdmoj.atlassian.net/wiki/spaces/JOWJ/pages/1482326465/WordPress+Sites+Runbook) . TODO: Review and migrate runbooks over those still useful.
 
 ## How to guides
 {% assign guides = site.pages
