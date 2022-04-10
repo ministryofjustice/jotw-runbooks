@@ -6,6 +6,8 @@ Borrowing from Google's engineering practices, our aim within JOTW, with respect
 
 See Google's full [documentation](https://google.github.io/eng-practices/review/reviewer/standard.html) on coding standards.
 
+Monzo also puts forward a number of [principles](https://monzo.com/blog/2018/06/29/engineering-principles) worth consideration.
+
 ### Code Review
 On this aspect, it seems Google has done an excellent job covering the dos and don'ts. For now we can reference their documentation, however, as a team we can discuss if there are areas in which we diverge from their documentation or are not applicable.
 
